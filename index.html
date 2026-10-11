@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monolith</title>
+<meta name="description" content="Monolith — มั่นคง เรียบง่าย ยั่งยืน">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0b0c0f; --slab:#15171c; --line:#262a33; --gold:#c9a24a; --text:#e9e6df; --muted:#9a968c; }
+  * { box-sizing:border-box; margin:0; padding:0 }
+  html { scroll-behavior:smooth }
+  body { font-family:'Prompt',sans-serif; background:var(--bg); color:var(--text); line-height:1.7 }
+  a { color:inherit; text-decoration:none }
+  nav { position:fixed; inset:0 0 auto 0; display:flex; justify-content:space-between; align-items:center; padding:18px 6vw;
+        background:rgba(11,12,15,.75); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); z-index:10 }
+  .logo { display:flex; align-items:center; gap:12px; font-weight:600; letter-spacing:.32em; font-size:15px }
+  .logo i { width:14px; height:30px; background:linear-gradient(180deg,#2b2f38,#0e0f12); border:1px solid var(--gold); display:block }
+  nav ul { display:flex; gap:28px; list-style:none; font-size:15px; color:var(--muted) }
+  nav ul a:hover { color:var(--gold) }
+  header { min-height:100vh; display:grid; place-items:center; text-align:center; position:relative; overflow:hidden; padding:120px 6vw 80px }
+  header:before { content:""; position:absolute; width:min(220px,30vw); height:min(560px,70vh); left:50%; top:50%; transform:translate(-50%,-46%);
+        background:linear-gradient(180deg,#22252d 0%,#0f1014 70%); border:1px solid #2f333d; box-shadow:0 0 120px rgba(201,162,74,.12), inset 0 0 40px rgba(0,0,0,.6) }
+  header:after { content:""; position:absolute; inset:auto 0 0 0; height:40%; background:linear-gradient(0deg,var(--bg),transparent) }
+  .hero { position:relative; z-index:2 }
+  .hero small { color:var(--gold); letter-spacing:.4em; font-size:13px }
+  .hero h1 { font-size:clamp(48px,9vw,112px); font-weight:700; letter-spacing:.12em; margin:10px 0 6px }
+  .hero p { color:var(--muted); font-size:clamp(17px,2.2vw,22px); font-weight:300 }
+  .btn { display:inline-block; margin-top:34px; padding:13px 30px; border:1px solid var(--gold); color:var(--gold); border-radius:2px; letter-spacing:.08em }
+  .btn:hover { background:var(--gold); color:var(--bg) }
+  section { padding:110px 6vw; max-width:1180px; margin:0 auto }
+  h2 { font-size:clamp(28px,4vw,40px); font-weight:600; margin-bottom:10px }
+  h2 + p.lead { color:var(--muted); margin-bottom:46px; max-width:720px }
+  .tag { color:var(--gold); font-size:13px; letter-spacing:.35em; margin-bottom:8px; display:block }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px }
+  .card { background:var(--slab); border:1px solid var(--line); padding:30px 28px; border-top:3px solid var(--gold) }
+  .card .n { color:var(--gold); font-size:13px; letter-spacing:.2em }
+  .card h3 { font-size:21px; font-weight:500; margin:8px 0 8px }
+  .card p { color:var(--muted); font-size:15.5px }
+  .values { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line) }
+  .values div { background:var(--bg); padding:34px 26px }
+  .values b { display:block; font-size:24px; font-weight:600; color:var(--gold); margin-bottom:4px }
+  .values span { color:var(--muted); font-size:15px }
+  .contact { text-align:center; border-top:1px solid var(--line) }
+  .contact p { color:var(--muted) }
+  footer { text-align:center; color:#5d5a53; font-size:13px; padding:34px 6vw 44px; border-top:1px solid var(--line) }
+  @media (max-width:640px){ nav ul { gap:16px; font-size:13px } .logo { letter-spacing:.2em } }
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#"><i></i>MONOLITH</a>
+  <ul><li><a href="#about">เกี่ยวกับเรา</a></li><li><a href="#work">สิ่งที่เราทำ</a></li><li><a href="#contact">ติดต่อ</a></li></ul>
+</nav>
+
+<header>
+  <div class="hero">
+    <small>EST. 2026</small>
+    <h1>MONOLITH</h1>
+    <p>มั่นคง · เรียบง่าย · ยั่งยืน</p>
+    <a class="btn" href="#about">รู้จักเรา</a>
+  </div>
+</header>
+
+<section id="about">
+  <span class="tag">ABOUT</span>
+  <h2>เกี่ยวกับเรา</h2>
+  <p class="lead">Monolith คือธุรกิจของครอบครัวประกิ่ง เราเชื่อในสิ่งที่สร้างอย่างตั้งใจ มั่นคงเหมือนหินก้อนเดียว
+    ทำงานด้วยข้อมูลจริง วางแผนระยะยาว และดูแลทุกคนเหมือนครอบครัว</p>
+  <div class="values">
+    <div><b>มั่นคง</b><span>ตัดสินใจจากข้อมูลจริง ทดสอบก่อนลงมือ</span></div>
+    <div><b>เรียบง่าย</b><span>ทำสิ่งที่จำเป็นให้ดีที่สุด</span></div>
+    <div><b>ยั่งยืน</b><span>คิดยาว ทำต่อเนื่อง เติบโตไปด้วยกัน</span></div>
+    <div><b>ครอบครัว</b><span>ทีมเล็กที่ไว้ใจและเรียนรู้จากกัน</span></div>
+  </div>
+</section>
+
+<section id="work">
+  <span class="tag">WHAT WE DO</span>
+  <h2>สิ่งที่เราทำ</h2>
+  <p class="lead">งานหลักของเรา (ตัวอย่างเนื้อหา — ปรับแก้ได้ตามจริง)</p>
+  <div class="grid">
+    <div class="card"><div class="n">01</div><h3>บริหารการเงินครอบครัว</h3><p>วางแผน ติดตาม และบันทึกบัญชีอย่างเป็นระบบ</p></div>
+    <div class="card"><div class="n">02</div><h3>วิเคราะห์ข้อมูลและตลาด</h3><p>ศึกษาข้อมูลจริง ทดสอบย้อนหลัง ก่อนตัดสินใจลงทุน</p></div>
+    <div class="card"><div class="n">03</div><h3>สื่อและคอนเทนต์</h3><p>ผลิตภาพ วิดีโอ และเนื้อหาความรู้ด้วยเครื่องมือ AI</p></div>
+    <div class="card"><div class="n">04</div><h3>ระบบอัตโนมัติ</h3><p>ผู้ช่วย AI ที่ช่วยจัดการงานเอกสารและงานประจำวัน</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <span class="tag">CONTACT</span>
+  <h2>ติดต่อเรา</h2>
+  <p>ช่องทางติดต่อจะเพิ่มเร็ว ๆ นี้</p>
+</section>
+
+<footer>© 2026 Monolith · เรียบเรียงโดย แสนดี</footer>
+</body>
+</html>
