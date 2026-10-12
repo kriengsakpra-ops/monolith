@@ -1,99 +1,87 @@
 <!doctype html>
-<html lang="th">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Monolith</title>
-<meta name="description" content="Monolith — มั่นคง เรียบง่าย ยั่งยืน">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KPIs กฟส.บ้านแพง · สะสม ม.ค.–ก.ย. 2569</title>
+<meta name="description" content="ผลการปฏิบัติงานตามค่าเกณฑ์วัด KPIs กฟส.บ้านแพง สะสมเดือน มกราคม–กันยายน 2569">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0b0c0f; --slab:#15171c; --line:#262a33; --gold:#c9a24a; --text:#e9e6df; --muted:#9a968c; }
-  * { box-sizing:border-box; margin:0; padding:0 }
-  html { scroll-behavior:smooth }
-  body { font-family:'Prompt',sans-serif; background:var(--bg); color:var(--text); line-height:1.7 }
-  a { color:inherit; text-decoration:none }
-  nav { position:fixed; inset:0 0 auto 0; display:flex; justify-content:space-between; align-items:center; padding:18px 6vw;
-        background:rgba(11,12,15,.75); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); z-index:10 }
-  .logo { display:flex; align-items:center; gap:12px; font-weight:600; letter-spacing:.32em; font-size:15px }
-  .logo i { width:14px; height:30px; background:linear-gradient(180deg,#2b2f38,#0e0f12); border:1px solid var(--gold); display:block }
-  nav ul { display:flex; gap:28px; list-style:none; font-size:15px; color:var(--muted) }
-  nav ul a:hover { color:var(--gold) }
-  header { min-height:100vh; display:grid; place-items:center; text-align:center; position:relative; overflow:hidden; padding:120px 6vw 80px }
-  header:before { content:""; position:absolute; width:min(220px,30vw); height:min(560px,70vh); left:50%; top:50%; transform:translate(-50%,-46%);
-        background:linear-gradient(180deg,#22252d 0%,#0f1014 70%); border:1px solid #2f333d; box-shadow:0 0 120px rgba(201,162,74,.12), inset 0 0 40px rgba(0,0,0,.6) }
-  header:after { content:""; position:absolute; inset:auto 0 0 0; height:40%; background:linear-gradient(0deg,var(--bg),transparent) }
-  .hero { position:relative; z-index:2 }
-  .hero small { color:var(--gold); letter-spacing:.4em; font-size:13px }
-  .hero h1 { font-size:clamp(48px,9vw,112px); font-weight:700; letter-spacing:.12em; margin:10px 0 6px }
-  .hero p { color:var(--muted); font-size:clamp(17px,2.2vw,22px); font-weight:300 }
-  .btn { display:inline-block; margin-top:34px; padding:13px 30px; border:1px solid var(--gold); color:var(--gold); border-radius:2px; letter-spacing:.08em }
-  .btn:hover { background:var(--gold); color:var(--bg) }
-  section { padding:110px 6vw; max-width:1180px; margin:0 auto }
-  h2 { font-size:clamp(28px,4vw,40px); font-weight:600; margin-bottom:10px }
-  h2 + p.lead { color:var(--muted); margin-bottom:46px; max-width:720px }
-  .tag { color:var(--gold); font-size:13px; letter-spacing:.35em; margin-bottom:8px; display:block }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px }
-  .card { background:var(--slab); border:1px solid var(--line); padding:30px 28px; border-top:3px solid var(--gold) }
-  .card .n { color:var(--gold); font-size:13px; letter-spacing:.2em }
-  .card h3 { font-size:21px; font-weight:500; margin:8px 0 8px }
-  .card p { color:var(--muted); font-size:15.5px }
-  .values { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line) }
-  .values div { background:var(--bg); padding:34px 26px }
-  .values b { display:block; font-size:24px; font-weight:600; color:var(--gold); margin-bottom:4px }
-  .values span { color:var(--muted); font-size:15px }
-  .contact { text-align:center; border-top:1px solid var(--line) }
-  .contact p { color:var(--muted) }
-  footer { text-align:center; color:#5d5a53; font-size:13px; padding:34px 6vw 44px; border-top:1px solid var(--line) }
-  @media (max-width:640px){ nav ul { gap:16px; font-size:13px } .logo { letter-spacing:.2em } }
-</style>
-</head>
-<body>
-<nav>
-  <a class="logo" href="#"><i></i>MONOLITH</a>
-  <ul><li><a href="#about">เกี่ยวกับเรา</a></li><li><a href="#work">สิ่งที่เราทำ</a></li><li><a href="#contact">ติดต่อ</a></li></ul>
-</nav>
-
+:root{--p:#74045F;--p2:#9B1B83;--g:#C7911B;--bg:#FAF6FA;--ink:#2B0A27;--mut:#7A5C76;--ok:#1E8E4E;--bad:#D14343}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Prompt,'Leelawadee UI',sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;padding:42px 20px 64px;text-align:center;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--g)}
+header .tag{display:inline-block;max-width:100%;border:1.5px solid rgba(255,255,255,.7);border-radius:30px;padding:3px 16px;font-size:15px;letter-spacing:.3px}
+header h1{font-size:clamp(24px,4.4vw,40px);font-weight:700;margin-top:12px;line-height:1.3}
+header p{font-size:clamp(16px,2.4vw,21px);opacity:.92;margin-top:6px}
+main{max-width:1080px;margin:-36px auto 0;padding:0 16px 40px;position:relative}
+.card{background:#fff;border-radius:22px;box-shadow:0 8px 26px rgba(80,10,70,.10);padding:26px 26px}
+.grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:16px}
+.score{text-align:center;background:linear-gradient(160deg,#fff,#F7EAF5)}
+.score b{display:block;font-size:68px;font-weight:800;color:var(--p);line-height:1.05}
+.score span{color:var(--mut);font-size:15px}
+.kv{display:flex;flex-direction:column;justify-content:center;gap:4px}
+.kv b{font-size:40px;font-weight:700} .kv b.ok{color:var(--ok)} .kv b.bad{color:var(--bad)}
+.kv small{color:var(--mut);font-size:15px}
+.donut{width:120px;height:120px;border-radius:50%;margin:0 auto 8px;background:conic-gradient(var(--ok) 0 341.1deg,var(--bad) 341.1deg 360deg);display:grid;place-items:center}
+.donut i{width:78px;height:78px;border-radius:50%;background:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;color:var(--ok)}
+h2{font-size:24px;color:var(--p);margin:34px 0 12px;display:flex;align-items:center;gap:10px}
+h2:before{content:"";width:8px;height:26px;border-radius:4px;background:var(--g)}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(80,10,70,.08)}
+th{background:var(--p);color:#fff;font-weight:500;padding:10px 12px;text-align:left;font-size:15px}
+td{padding:10px 12px;border-bottom:1px solid #F0E3EE;vertical-align:top;font-size:15.5px}
+td small{display:block;color:var(--mut);font-size:13px;margin-top:2px}
+td.no{font-weight:600;color:var(--p);white-space:nowrap} td.w{text-align:center;white-space:nowrap}
+td.s{text-align:right;font-weight:700;white-space:nowrap} td.s.ok{color:var(--ok)} td.s.low{color:var(--bad)}
+tr.cat td{background:#F7EAF5;color:var(--p);font-weight:600} tr.cat span{color:var(--mut);font-weight:400;font-size:14px;margin-left:6px}
+.low-card{border-left:8px solid var(--bad)}
+.low-card h3{font-size:19px} .low-card .row{display:flex;flex-wrap:wrap;gap:22px;margin-top:12px}
+.low-card .row div b{display:block;font-size:26px} .low-card .row div small{color:var(--mut)}
+.note{font-size:14.5px;color:var(--mut)} .note li{margin:4px 0 4px 18px}
+.evi img{width:100%;border-radius:12px;border:1px solid #EADAE7}
+footer{text-align:center;color:var(--mut);font-size:14px;padding:26px 16px 34px}
+@media(max-width:760px){.grid{grid-template-columns:1fr} td,th{padding:7px 6px;font-size:13.5px} td small{font-size:12px} .score b{font-size:56px} .card{padding:18px 16px} .low-card .row{gap:14px} .low-card .row div b{font-size:22px} h2{font-size:20px}}
+.tw{overflow-x:auto;border-radius:18px} html,body{overflow-x:hidden} td{overflow-wrap:anywhere}
+</style></head><body>
 <header>
-  <div class="hero">
-    <small>EST. 2026</small>
-    <h1>MONOLITH</h1>
-    <p>มั่นคง · เรียบง่าย · ยั่งยืน</p>
-    <a class="btn" href="#about">รู้จักเรา</a>
-  </div>
+ <span class="tag">การไฟฟ้าส่วนภูมิภาคสาขาบ้านแพง (S) · D06401</span>
+ <h1>ผลการปฏิบัติงานตามค่าเกณฑ์วัด KPIs</h1>
+ <p>สะสมเดือน มกราคม – กันยายน 2569</p>
 </header>
+<main>
+ <div class="grid">
+  <div class="card score"><span>คะแนนภาพรวม ม.ค.–ก.ย.</span><b>4.97</b><span>คะแนนถ่วงน้ำหนัก จาก 19 ข้อที่ประเมินในรอบนี้ (น้ำหนักรวม 26)</span></div>
+  <div class="card kv"><div class="donut"><i>94.7%</i></div><small style="text-align:center">สัดส่วนข้อที่ได้ 5 คะแนน</small></div>
+  <div class="card kv"><small>ได้ระดับคะแนน 5</small><b class="ok">18 ข้อ</b><small>ต่ำกว่า 5 คะแนน</small><b class="bad">1 ข้อ</b></div>
+ </div>
 
-<section id="about">
-  <span class="tag">ABOUT</span>
-  <h2>เกี่ยวกับเรา</h2>
-  <p class="lead">Monolith คือธุรกิจของครอบครัวประกิ่ง เราเชื่อในสิ่งที่สร้างอย่างตั้งใจ มั่นคงเหมือนหินก้อนเดียว
-    ทำงานด้วยข้อมูลจริง วางแผนระยะยาว และดูแลทุกคนเหมือนครอบครัว</p>
-  <div class="values">
-    <div><b>มั่นคง</b><span>ตัดสินใจจากข้อมูลจริง ทดสอบก่อนลงมือ</span></div>
-    <div><b>เรียบง่าย</b><span>ทำสิ่งที่จำเป็นให้ดีที่สุด</span></div>
-    <div><b>ยั่งยืน</b><span>คิดยาว ทำต่อเนื่อง เติบโตไปด้วยกัน</span></div>
-    <div><b>ครอบครัว</b><span>ทีมเล็กที่ไว้ใจและเรียนรู้จากกัน</span></div>
+ <h2>ข้อที่ได้ต่ำกว่า 5 คะแนน</h2>
+ <div class="card low-card">
+  <h3>ข้อ 28 · ความสำเร็จในการบริหารเหตุการณ์ แผนดับไฟฟ้า หม้อแปลงจำหน่ายแรงต่ำ ในวันที่ปฏิบัติงาน และ แจ้งข้อมูลวันเวลางดจ่ายไฟฟ้าให้แก่ผู้ใช้ไฟได้ทราบ ก่อนวันเริ่มปฏิบัติงานภายใน 3 วันทำการ</h3>
+  <p class="note" style="margin-top:4px">10.ปฏิบัติการ · ผมร.กบช.ฝปบ.</p>
+  <div class="row">
+   <div><b style="color:var(--bad)">4.3031</b><small>คะแนน</small></div>
+   <div><b>1.0</b><small>น้ำหนัก</small></div>
+   <div><b>−0.0268</b><small>คะแนนภาพรวมที่หายไป</small></div>
+   <div><b style="color:var(--ok)">5.00</b><small>ถ้าข้อนี้ได้ 5 คะแนน</small></div>
   </div>
-</section>
+ </div>
 
-<section id="work">
-  <span class="tag">WHAT WE DO</span>
-  <h2>สิ่งที่เราทำ</h2>
-  <p class="lead">งานหลักของเรา (ตัวอย่างเนื้อหา — ปรับแก้ได้ตามจริง)</p>
-  <div class="grid">
-    <div class="card"><div class="n">01</div><h3>บริหารการเงินครอบครัว</h3><p>วางแผน ติดตาม และบันทึกบัญชีอย่างเป็นระบบ</p></div>
-    <div class="card"><div class="n">02</div><h3>วิเคราะห์ข้อมูลและตลาด</h3><p>ศึกษาข้อมูลจริง ทดสอบย้อนหลัง ก่อนตัดสินใจลงทุน</p></div>
-    <div class="card"><div class="n">03</div><h3>สื่อและคอนเทนต์</h3><p>ผลิตภาพ วิดีโอ และเนื้อหาความรู้ด้วยเครื่องมือ AI</p></div>
-    <div class="card"><div class="n">04</div><h3>ระบบอัตโนมัติ</h3><p>ผู้ช่วย AI ที่ช่วยจัดการงานเอกสารและงานประจำวัน</p></div>
-  </div>
-</section>
+ <h2>ผลรายข้อ (ประเมินในรอบ ก.ย. 2569)</h2>
+ <div class="tw"><table><thead><tr><th>ข้อ</th><th>เกณฑ์วัด (กลุ่ม · ผู้รับผิดชอบ)</th><th style="text-align:center">น้ำหนัก</th><th style="text-align:right">คะแนน</th></tr></thead>
+ <tbody>
+ <tr class="cat"><td colspan="4">หมวด 1 งานตามนโยบาย / งานที่ผู้บังคับบัญชามอบหมาย <span>6 ข้อ</span></td></tr><tr><td class="no">1.1</td><td>ผู้บริหารเป็นผู้นำในการดำเนินกิจกรรมด้านความปลอดภัย (PSC)<small>01.ความปลอดภัย · ผปอ.กวว.ฝวบ.</small></td><td class="w">0.5</td><td class="s ok">5.0000</td></tr><tr><td class="no">1.2</td><td>สุ่มตรวจสอบความปลอดภัยทีมปฏิบัติงาน ไตรมาสละ 1 ครั้ง<small>01.ความปลอดภัย · ผปอ.กวว.ฝวบ.</small></td><td class="w">0.5</td><td class="s ok">5.0000</td></tr><tr><td class="no">1.3</td><td>เกณฑ์วัดผลการดำเนินการนำโปรแกรมตรวจสอบการปฏิบัติงานด้วยความปลอดภัย สำหรับการปฏิบัติงานในระบบไฟฟ้า มาใช้งาน (WeSafe)<small>01.ความปลอดภัย · ผปอ.กวว.ฝวบ.</small></td><td class="w">0.5</td><td class="s ok">5.0000</td></tr><tr><td class="no">1.4</td><td>เกณฑ์วัดผลการดำเนินการฝึกซ้อมตระหนักด้านความปลอดภัย ผ่านโปรแกรม SPA และ google sheet กปภ.<small>01.ความปลอดภัย · ผปอ.กวว.ฝวบ.</small></td><td class="w">0.5</td><td class="s ok">5.0000</td></tr><tr><td class="no">1.5</td><td>คัดเลือกช่างผู้ควบคุมงานดีเด่น และมอบประกาศนียบัตร<small>01.ความปลอดภัย · ผปอ.กวว.ฝวบ.</small></td><td class="w">0.5</td><td class="s ok">5.0000</td></tr><tr><td class="no">2</td><td>ค่าดัชนีการประสบอุบัติภัยของ กฟภ.<small>01.ความปลอดภัย · ผปอ.กวว.ฝวบ.</small></td><td class="w">2.0</td><td class="s ok">5.0000</td></tr><tr class="cat"><td colspan="4">หมวด 2 งานตามหน้าที่ความรับผิดชอบ <span>12 ข้อ</span></td></tr><tr><td class="no">9.1</td><td>การตรวจสอบและติดต่อผู้ร้องเรียนภายใน 5 วัน<small>07.บริการ · ผลส.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">9.2</td><td>ปิดข้อร้องเรียนภายใน 15 วัน<small>07.บริการ · ผลส.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">9.3</td><td>ลดจำนวนข้อร้องเรียนร้อยละ 10<small>07.บริการ · ผลส.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">9.4</td><td>ความครบถ้วนเอกสารปิดข้อร้องเรียน<small>07.บริการ · ผลส.กบล.ฝวบ.</small></td><td class="w">0.5</td><td class="s ok">5.0000</td></tr><tr><td class="no">10.1</td><td>การบริการติดตั้งมิเตอร์ผู้ขอใช้ไฟฟ้าขนาดมิเตอร์แรงต่ำไม่เกิน 30 แอมป์ ในเขตชุมชน ภายใน 2 วันทำการ<small>07.บริการ · ผบธ.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">10.2</td><td>การบริการติดตั้งมิเตอร์ผู้ขอใช้ไฟฟ้าขนาดมิเตอร์แรงต่ำไม่เกิน 30 แอมป์ นอกเขตชุมชน ภายใน 5 วันทำการ<small>07.บริการ · ผบธ.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">11</td><td>ความสำเร็จในการตรวจสอบมิเตอร์ป้องกันหน่วยสูญเสียจากการละเมิดการใช้ไฟฟ้าและการชำรุดของมิเตอร์และอุปกรณ์ประกอบ ของ กฟฟ.(L-S) ตามนโยบาย ผวก<small>08.มิเตอร์ · ผมต.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">12</td><td>งานตรวจสอบ และปิดใบสั่งจากโปรแกรม AMR/AMI<small>08.มิเตอร์ · ผมต.กบล.ฝวบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">28</td><td>ความสำเร็จในการบริหารเหตุการณ์ แผนดับไฟฟ้า หม้อแปลงจำหน่ายแรงต่ำ ในวันที่ปฏิบัติงาน และ แจ้งข้อมูลวันเวลางดจ่ายไฟฟ้าให้แก่ผู้ใช้ไฟได้ทราบ ก่อนวันเริ่มปฏิบัติงานภายใน 3 วันทำการ<small>10.ปฏิบัติการ · ผมร.กบช.ฝปบ.</small></td><td class="w">1.0</td><td class="s low">4.3031</td></tr><tr><td class="no">29</td><td>การแก้ไข-บำรุงรักษาระบบจำหน่ายแรงสูง ปีละ2ครั้ง<small>10.ปฏิบัติการ · ผบร.กบช.ฝปบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">30</td><td>การแก้ไข-บำรุงรักษาระบบจำหน่ายแรงต่ำ<small>10.ปฏิบัติการ · ผบร.กบช.ฝปบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr><td class="no">31</td><td>สัดส่วนของค่าใช้จ่ายในการบำรุงรักษาเชิงป้องกันต่อเชิงแก้ไข (Preventive Maintenance Corrective Maintenance) ที่เพิ่มขึ้นของระบบไฟฟ้า<small>10.ปฏิบัติการ · ผบร.กบช.ฝปบ.</small></td><td class="w">1.0</td><td class="s ok">5.0000</td></tr><tr class="cat"><td colspan="4">หมวด 3 งานตามความคิดสร้างสรรค์ <span>1 ข้อ</span></td></tr><tr><td class="no">40</td><td>ผลิตภัณฑ์หรือกระบวนงานใหม่ที่ได้จากนวัตกรรม<small>12.ความคิดสร้างสรรค์</small></td><td class="w">10.0</td><td class="s ok">5.0000</td></tr>
+ </tbody></table></div>
 
-<section id="contact" class="contact">
-  <span class="tag">CONTACT</span>
-  <h2>ติดต่อเรา</h2>
-  <p>ช่องทางติดต่อจะเพิ่มเร็ว ๆ นี้</p>
-</section>
+ <h2>หน้าจอ Dashboard-KPIs-BI</h2>
+ <div class="card evi"><img src="dashboard_sep.png" alt="Power BI Dashboard-KPIs-BI กฟส.บ้านแพง ม.ค.–ก.ย. 2569" loading="lazy">
+  <p class="note" style="margin-top:8px">ที่มา: Power BI Dashboard-KPIs-BI (กฟฉ.1 อุดรธานี) หน้าเกณฑ์วัดผลการดำเนินงาน KPIs ปี 2569 · D06401 กฟส.บพง.(S) · M09 · พิมพ์ 12 ต.ค. 2569</p></div>
 
-<footer>© 2026 Monolith · เรียบเรียงโดย แสนดี</footer>
-</body>
-</html>
+ <h2>หมายเหตุ</h2>
+ <div class="card note"><ul>
+  <li>Dashboard รอบนี้แสดงเฉพาะข้อที่ประเมินในเดือน ก.ย. (19 จาก 55 ข้อ) คะแนนภาพรวมคิดจากข้อเหล่านี้เท่านั้น ไม่นำคะแนนเดือนก่อนมารวม</li>
+  <li>คะแนนภาพรวม = Σ(น้ำหนัก × คะแนน) ÷ Σน้ำหนัก (4.9732) คำนวณจากตัวเลขใน Dashboard เนื่องจากหน้า Dashboard ไม่แสดงคะแนนรวม</li>
+  <li>ข้อที่ยังไม่อยู่ในรอบประเมินนี้ไม่ได้แปลว่าได้ 0 คะแนน</li>
+ </ul></div>
+</main>
+<footer>© 2569 กฟส.บ้านแพง · เรียบเรียงโดย แสนดี</footer>
+</body></html>
